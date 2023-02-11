@@ -1,12 +1,12 @@
-from models.book import Book
+from models.book import *
 import datetime
 
 
-book_1 = Book("Tristram Shandy", "Laurence Sterne", "Novel", "ABC", True)
-book_2 = Book("The Brothers Karamazov", "Fyodor Dostoyevsky", "Philosophical Novel", "DEF", True)
-book_3 = Book("Midnight's Children", "Salman Rushdie", "Magic Realism", "GHI", True)
-book_4 = Book("The Grapes of Wrath", "John Steinbeck", "Novel", "JKL", False)
-book_5 = Book("The Trial", "Franz Kafka", "Philosophical Fiction", "MNO", False)
+book_1 = Book("Tristram Shandy", "Laurence Sterne", "Novel", True)
+book_2 = Book("The Brothers Karamazov", "Fyodor Dostoyevsky", "Philosophical Novel", False)
+book_3 = Book("Midnight's Children", "Salman Rushdie", "Magic Realism", True)
+book_4 = Book("The Grapes of Wrath", "John Steinbeck", "Novel", True)
+book_5 = Book("The Trial", "Franz Kafka", "Philosophical Fiction", True)
 
 book_list = [book_1, book_2, book_3, book_4, book_5]
 

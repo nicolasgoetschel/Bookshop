@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+<h2>Books in stock</h2>
+<div class ="book_box">
+    {% for book in book_list %}
+    <div>
+        <h4>Book Title:</h4>
+        <h3><b>{{ book.title }}</b></h3>
+        <h4>Book Author:</h4> 
+        <h3>{{ book.author }}</h3>
+        <h5>Book Genre:</h5>
+        <h4>{{ book.genre}}</h4>
+        <a href="/books/{{book_list.index(book)}}">Details</a>
+        <h3><b>Can you collect this book?</b></h3>
+        <h3>{% if book.available %} "YES, enjoy it!" {%else%} "No sorry, the book has already been borrowed "
+        {% endif %}</h3>
+          
+        
+        
+      </div>
+      {% endfor %}
+  </div>
+
+{% endblock %} 

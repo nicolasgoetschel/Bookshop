@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>The Brothers Karamazov</title>
-</head>
-<body>
-    {% for book in book_list %}
-    <p>{{ book.title }}, 
-        {{ book.author }},
-        {{ book.genre }},
-        <a href="books/{{ book_list.index(book) }}">Go To Book</a>
-    </p>
-    {% endfor %}
+{% extends "base.html" %}
 
-    
-</body>
-</html>
+{% block content %}
+
+<div class="home_box">
+    <h2>What is our intention?</h2>
+    <p>We want to create a platform where people from Portobello and the surrounding area have the opportunity to receive books without paying but also have the opportunity to donate books.</p>
+    <h2>Contact</h2>
+    <p>Instagram</p>
+    <iframe 
+    src="https://www.instagram.com/instagram/?hl=en">
+    </frame>
+
+
+{% endblock %}

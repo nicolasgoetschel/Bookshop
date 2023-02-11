@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{%block content%} 
+
+<h2>Book information:</h2>
+
+<div class='book_box'>
+        <div class='book'>
+            <h4>Title:</h4>
+            <h3> {{book.title}} </h3>
+            <h4>Author:</h4>
+            <h3> {{book.author}} </h3>
+            <h4>Genre:</h4>
+            <h3> {{book.genre}} </h3>
+            <h4>Delete book:</h4>
+            <form action="/books/delete" method="POST">
+                <input
+                type="hidden"
+                value="{{book_list.index(book)}}"
+                name="delete"
+                />
+                <input class="delete_button" type="submit" value="&#9587;" />
+            </form> 
+                 
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock %} 

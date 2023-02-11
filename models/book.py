@@ -1,10 +1,10 @@
-class Book:
-    def __init__(self, title, author, genre, description, available):
+class Book():
+
+    def __init__(self, title, author, genre, available):
         self.title = title
         self.author = author
         self.genre = genre
-        self.description = description
         self.available = available
 
     def __nonzero__(self):
-        return self.available !=0     
+        return self.available !=0 
