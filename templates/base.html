@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{{title}} - Welcome</title>
 </head>
 <body>
@@ -31,10 +32,9 @@
         </main>
         <footer>
         <p>&copy;Portobello Library 2023</p>
-        <p>Instagram</p>
-        <iframe 
-        src="https://www.instagram.com/instagram/?hl=en">
-        </frame>
+        <iframe>
+            <a href="#" class="fa-instagram"></a>
+        </iframe>
         </footer>
 </body>
 </html>
