@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    padding: 2rem;
+    background: rgb(17, 26, 17);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    padding: 2rem;
+    background: rgb(17, 26, 17);
+    color: white;
+    text-align: end;
+}
+
+.nav-links{
+    padding: 3rem;
+    padding-left: 3rem;
+    background: white;
+    color: white;
+}
+
+nav>ul{
+    list-style: none;
+}
+
+nav>ul>li>a{
+    color: rgb(17, 26, 17);
+    text-decoration: none;
+    font-weight: bold;
+}
