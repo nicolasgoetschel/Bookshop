@@ -30,7 +30,7 @@ def add_book():
 
 @app.route('/books/<show_all_books>')
 def book_information(show_all_books):
-    selected_book = book_list [int(float(show_all_books))]
+    selected_book = book_list [int(show_all_books)]
     return render_template ('single_book.html', book = selected_book, book_list = book_list)
 
 @app.route('/books/delete/', methods =['POST'])
