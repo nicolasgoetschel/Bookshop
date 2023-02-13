@@ -12,17 +12,6 @@ header{
     text-align: center;
 }
 
-footer>p{
-    padding: 2rem;
-    background: rgb(17, 26, 17);
-    color: white;
-    text-align: end;
-}
-footer>p>a{
-    padding: 2rem;
-    background: rgb(17, 26, 17);
-    color: white;
-    text-align: start;
 
 .nav-links{
     padding: 3rem;
@@ -41,3 +30,15 @@ nav>ul>li>a{
     font-weight: bold;
 }
 
+footer>p{
+    padding: 10rem;
+    background: rgb(17, 26, 17);
+    color: white;
+    text-align: end;
+}
+.fa{
+    padding: 10rem;
+    background: rgb(17, 26, 17);
+    color: white;
+    text-align: left;
+}
