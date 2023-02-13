@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <title>{{title}} - Welcome</title>
+    <style>
+        .fa {  
+            padding: 20px;  
+          text-align: center;  
+            margin: 5px 2px;  
+            font-size: 30px;  
+            width: 50px;  
+          }  
+          .fa-instagram {  
+            background: #125688;  
+            color: white;  
+          }
+          .fa:hover {  
+            opacity: 0.9;  
+        }  
+    </style>
 </head>
 <body>
     <header>
@@ -32,9 +48,8 @@
         </main>
         <footer>
         <p>&copy;Portobello Library 2023</p>
-        <iframe>
-            <a href="#" class="fa-instagram"></a>
-        </iframe>
+        
+            <a href="#" class="fa fa-instagram"></a>  
         </footer>
 </body>
 </html>
